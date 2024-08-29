@@ -29,6 +29,23 @@ app.get("/getcandidatename", async (req, res) => {
     res.status(500).send("Error retrieving candidate data");
   }
 });
+
+app.get("/getcandidatedatawithwork", async (req, res) => {
+  try {
+    // Find all candidates
+    const candidates = await politicanModel.find({});
+
+    if (candidates.length === 0) {
+      return res.status(404).json({ message: "No candidates found" });
+    }
+
+    // Return names of all candidates directly
+    res.json(candidates); // Return the entire candidate objects
+  } catch (error) {
+    res.status(500).send("Error retrieving candidate data");
+  }
+});
+
 app.get("/getcandidatebyparty", async (req, res) => {
   try {
     const { party } = req.body;
@@ -96,5 +113,5 @@ app.get("/getcandidatebyconstituencyandname", async (req, res) => {
 });
 
 app.listen(3500, () => {
-  console.log("Server is listening on port 3500");
+  console.log("Server is running on port 3500");
 });
