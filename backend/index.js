@@ -3,8 +3,14 @@ const app = express();
 app.use(express.json());
 const cors = require("cors");
 app.use(cors());
+<<<<<<< HEAD
 const mongoose = require("mongoose");
 require("dotenv").config();
+=======
+const mongoose = require('mongoose');
+require('dotenv').config();
+const axios=require('axios')
+>>>>>>> tushit
 
 const politicanModel = require("./models/models");
 const candidateModel = require("./models/newmodels");
@@ -15,17 +21,23 @@ mongoose
   .catch((error) => console.log(error));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> tushit
     app.get('/getcandidatename', async (req, res) => {
         try {
-            // Find all candidates
+         
             const candidates = await candidateModel.find({});
     
             if (candidates.length === 0) {
                 return res.status(404).json({ message: 'No candidates found' });
             }
     
-            // Return names of all candidates directly
-            res.json(candidates); // Return the entire candidate objects
+          
+            res.json(candidates); 
         } catch (error) {
             res.status(500).send('Error retrieving candidate data');
         }
@@ -66,38 +78,65 @@ mongoose
     });
     app.post('/getcandidatebyconstituencyandname', async (req, res) => {
         try {
-            const { constituency, name } = req.body; // Get constituency and name from the request body
+            const { constituency, name } = req.body; 
             
-            // Create an object to hold query conditions
+         
             const query = {};
     
-            // Add condition for constituency first
+           
             if (constituency) {
-                query['details.constituency'] = constituency; // Filter by constituency
+                query['details.constituency'] = constituency; 
             }
     
-            // Then add condition for name
+          
             if (name) {
-                query.name = name; // Filter by name
+                query.name = name; 
             }
     
-            // Find candidates based on the constructed query
             const candidates = await candidateModel.find(query);
     
-            // Check if candidates were found
             if (candidates.length === 0) {
                 return res.status(404).json({ message: 'No candidates found' });
             }
     
-            // Return the found candidates
             res.json(candidates);
         } catch (error) {
             res.status(500).send('Error retrieving candidate data');
         }
     });
+    app.get('/getworksdata',async(req,res)=>{
+      try{
+        const candidate=await politicanModel.find({})
+        res.json(candidate)
+      }catch(error){
+        console.error(error)
+      }
+    })
+    app.post('/getworksdatabyname', async (req, res) => {
+      try {
+          const { name } = req.body;
+          
+          
+          const candidate = await politicanModel.findOne({ name: name });
+          
+         
+          if (!candidate) {
+              return res.status(404).json({ message: 'Candidate not found' });
+          }
+  
+        
+          res.json(candidate.works);
+      } catch (error) {
+          console.error(error);
+          res.status(500).send('Error retrieving candidate data');
+      }
+  });
+  
     
 app.listen(3500, () => {
+
     console.log('Server is listening on port 3500');
+<<<<<<< HEAD
 =======
 app.get("/getcandidatename", async (req, res) => {
   try {
@@ -184,3 +223,9 @@ app.listen(3500, () => {
   console.log("Server is listening on port 3500");
 >>>>>>> 81e5d74f7991f11bb3d4d7ad1c504e8d2a8ce4ea
 });
+=======
+
+    
+})
+
+>>>>>>> tushit
