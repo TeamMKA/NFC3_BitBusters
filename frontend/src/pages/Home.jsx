@@ -4,6 +4,7 @@ import { assets } from "../assets/assets";
 import DrawerTemp from "../utils/widgets/DrawerTemp";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import WorkflowTimeline from "../components/WorkflowTimeline";
 
 const Home = () => {
   const images = [
