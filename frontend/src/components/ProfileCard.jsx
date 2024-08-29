@@ -1,7 +1,10 @@
 import { minister_list } from "../assets/assets";
 import InteractiveCard from "../utils/widgets/InteractiveCard";
 
+
 const ProfileCard = () => {
+
+  
   return (
     <div className="profile">
       {minister_list.map((minister, index) => (
