@@ -1,0 +1,18 @@
+const express=require('express')
+const app=express()
+app.use(express.json())
+const cors=require('cors')
+app.use(cors())
+const mongoose=require('mongoose')
+require('dotenv').config()
+const politicanModel=require('./models/models')
+mongoose.connect(process.env.MONGOTEST)
+.then(console.log('Database is succesfully connecte'))
+.catch((error)=>{console.log(error)})
+app.get('/getcandidatename',async(req,res)=>{
+    const Candidate=await politicanModel.find({})
+    res.json(Candidate)
+})
+app.listen(3500,()=>{
+    console.log('Server is listening on port 3500')
+})
