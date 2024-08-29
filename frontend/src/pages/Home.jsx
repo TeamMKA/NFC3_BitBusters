@@ -20,9 +20,6 @@ const Home = () => {
   return (
     <div className="home">
 
-      <div className="container">
-            
-
       <div className="container" style={{
         backgroundImage: `url(${images[currentImageIndex]})`,
       }}>
@@ -36,7 +33,7 @@ const Home = () => {
 
       </div>
     </div>
-    </div>
+    
   )
 }
 
