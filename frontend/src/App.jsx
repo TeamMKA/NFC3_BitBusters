@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 
 import Footer from './components/Footer';
 import ProfileCard from './components/ProfileCard';
+import WorkflowTimeline from './components/WorkflowTimeline';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path='/cards' element={<ProfileCard />} />
+      <Route path='/about' element={<WorkflowTimeline />} />
     </Routes>
     <Footer/>
    </Router>
