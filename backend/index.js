@@ -5,6 +5,7 @@ const cors = require('cors');
 app.use(cors());
 const mongoose = require('mongoose');
 require('dotenv').config();
+const axios=require('axios')
 
 const politicanModel = require('./models/models');
 const candidateModel=require('./models/newmodels')
@@ -18,15 +19,15 @@ mongoose.connect(process.env.MONGOTEST)
 
     app.get('/getcandidatename', async (req, res) => {
         try {
-            // Find all candidates
+         
             const candidates = await candidateModel.find({});
     
             if (candidates.length === 0) {
                 return res.status(404).json({ message: 'No candidates found' });
             }
     
-            // Return names of all candidates directly
-            res.json(candidates); // Return the entire candidate objects
+          
+            res.json(candidates); 
         } catch (error) {
             res.status(500).send('Error retrieving candidate data');
         }
@@ -120,6 +121,7 @@ mongoose.connect(process.env.MONGOTEST)
           res.status(500).send('Error retrieving candidate data');
       }
   });
+  
     
 app.listen(3500, () => {
 
