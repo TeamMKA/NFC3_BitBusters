@@ -14,7 +14,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path='/cards' element={<ProfileCard />} />
-      <Route path='/about' element={<WorkflowTimeline />} />
+
     </Routes>
     <Footer/>
    </Router>
