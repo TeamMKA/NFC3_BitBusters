@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { assets } from "../assets/assets";
 import DrawerTemp from "../utils/widgets/DrawerTemp";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 const Home = () => {
   const images = [
@@ -9,9 +11,16 @@ const Home = () => {
     assets.Parliament_2,
     assets.Parliament_3,
   ];
-  const primaryItems = ['Politicians', 'State', 'Party'];
-  const secondaryItems = ['Predictive Analysis', 'News Tracking', 'Recommendation System'];
-  
+  const primaryItems = [
+    { text: 'Politicians', url: '/cards'},
+    { text: 'State', url: '/' },
+    { text: 'Party', url: '/' }
+  ];
+  const secondaryItems = [
+    { text: 'Predictive Analysis', url: '/' },
+    { text: 'News Tracking', url: '/' },
+    { text: 'Recommendation System', url: '/' }
+  ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -33,13 +42,17 @@ const Home = () => {
         ></div>
 
         <div className="content">
-          <DrawerTemp items={primaryItems} secondaryItems={secondaryItems} drawerWidth={300} />
           <h1>Welcome to the Parliament</h1>
           <p>
             The Parliament is a place where you can learn about the history of
-            the UK Parliament, how it works, and the people who work there.
+            the Inida Parliament, how it works, and the people who work there.
           </p>
+         
         </div>
+      </div>
+
+      <div className="home2" >
+      <DrawerTemp items={primaryItems} secondaryItems={secondaryItems} drawerWidth={300} />
       </div>
     </>
   );

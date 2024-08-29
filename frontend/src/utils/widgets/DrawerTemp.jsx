@@ -11,6 +11,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from 'react-icons/md';
 
 export default function DrawerTemp({ items, secondaryItems, drawerWidth = 250 }) {
   const [open, setOpen] = React.useState(false);
@@ -24,9 +25,9 @@ export default function DrawerTemp({ items, secondaryItems, drawerWidth = 250 })
       <Button onClick={toggleDrawer} sx={{ margin: '10px' }}>Close drawer</Button>
       <Divider />
       <List>
-        {items.map((text, index) => (
+        {items.map(({ text, url }, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href={url} target="_blank" rel="noopener noreferrer">
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
@@ -37,9 +38,9 @@ export default function DrawerTemp({ items, secondaryItems, drawerWidth = 250 })
       </List>
       <Divider />
       <List>
-        {secondaryItems.map((text, index) => (
+        {secondaryItems.map(({ text, url }, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href={url} target="_blank" rel="noopener noreferrer">
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
@@ -53,7 +54,19 @@ export default function DrawerTemp({ items, secondaryItems, drawerWidth = 250 })
 
   return (
     <div>
-      <Button onClick={toggleDrawer}>{open ? 'Close drawer' : 'Open drawer'}</Button>
+      <Button
+        onClick={toggleDrawer}
+        sx={{
+          /* position: 'static', */
+          top: '50%',
+          left: 0,
+          transform: 'translateY(-50%)',
+          zIndex: 11,
+          backgroundColor: 'black',
+        }}
+      >
+        {open ? <MdOutlineKeyboardArrowLeft size={24}  /> : <MdOutlineKeyboardArrowRight size={24} />}
+      </Button>
       <Drawer
         variant="persistent"
         open={open}
