@@ -35,7 +35,7 @@ const ProfileCard = () => {
     (candidate) => candidate.details.additionalDetails.constituency
   );
 
-  const filterUniqueByName = (data) => {
+/*   const filterUniqueByName = (data) => {
     const uniqueNames = {};
     return data.filter((candidate) => {
       const name = candidate.name;
@@ -49,7 +49,7 @@ const ProfileCard = () => {
 
   const uniqueNames = filterUniqueByName(candidateData).map(
     (candidate) => candidate.name
-  );
+  ); */
 
   const uniqueCandidateData = filterUniqueByConstituency(candidateData);
 
