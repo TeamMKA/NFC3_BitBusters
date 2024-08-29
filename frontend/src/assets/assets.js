@@ -1,10 +1,21 @@
-import Parliament_1 from './Parliament_1.webp'
-import Parliament_2 from './Parliament_2.jpeg'
+import Parliament_1 from './Parliament_1.jpg'
+import Parliament_2 from './Parliament_2.jpg'
 import Parliament_3 from './Parliament_3.jpg'
+
+
+
+import facebook_icon from './facebook_icon.png'
+import twitter_icon from './twitter_icon.png'
+import linkedin_icon from './linkedin_icon.png'
 export const assets = {
   Parliament_1,
   Parliament_2,
-  Parliament_3
+  Parliament_3,
+
+  facebook_icon,
+  twitter_icon,
+  linkedin_icon,
+  
 }
 export const minister_list =[
   
