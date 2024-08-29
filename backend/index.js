@@ -28,7 +28,7 @@ mongoose.connect(process.env.MONGOTEST)
             res.status(500).send('Error retrieving candidate data');
         }
     });
-    app.get('/getcandidatebyparty', async (req, res) => {
+    app.post('/getcandidatebyparty', async (req, res) => {
         try {
             const { party } = req.body;
             
@@ -45,7 +45,7 @@ mongoose.connect(process.env.MONGOTEST)
             res.status(500).send('Error retrieving candidate data');
         }
     });
-    app.get('/getcandidatebyconstituency', async (req, res) => {
+    app.post('/getcandidatebyconstituency', async (req, res) => {
         try {
             const { constituency } = req.body;
             
@@ -62,7 +62,7 @@ mongoose.connect(process.env.MONGOTEST)
             res.status(500).send('Error retrieving candidate data');
         }
     });
-    app.get('/getcandidatebyconstituencyandname', async (req, res) => {
+    app.post('/getcandidatebyconstituencyandname', async (req, res) => {
         try {
             const { constituency, name } = req.body; // Get constituency and name from the request body
             
