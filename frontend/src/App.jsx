@@ -3,21 +3,22 @@ import Home from './pages/Home'
 import  './styles/app.scss';
 
 import NavBar from './components/NavBar'
-import DrawerTemp from './utils/widgets/DrawerTemp';
 
 import Footer from './components/Footer';
+import ProfileCard from './components/ProfileCard';
+import WorkflowTimeline from './components/WorkflowTimeline';
+
 
 
 const App = () => {
-  const primaryItems = ['Politicians', 'State', 'Party'];
-  const secondaryItems = ['Predictive Analysis', 'News Tracking', 'Recommendation System'];
-  
+
   return (
    <Router>
     <NavBar />
-    <DrawerTemp items={primaryItems} secondaryItems={secondaryItems} drawerWidth={300} />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path='/cards' element={<ProfileCard />} />
+      <Route path='/about' element={<WorkflowTimeline />} />
     </Routes>
     <Footer/>
    </Router>

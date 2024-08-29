@@ -1,0 +1,24 @@
+.profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 4rem;
+    padding: 0 20px; /* Add padding to the container */
+  }
+  
+  @media (max-width: 768px) {
+    .profile {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      row-gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      row-gap: 1.5rem;
+    }
+  }

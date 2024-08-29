@@ -1,9 +1,14 @@
+import { assets } from "../assets/assets"
 
 
 const NavBar = () => {
   return (
     <nav>
+        <div className="logo">
+        <img src={assets.logo} alt=""  />
         <h1>Navbar</h1>
+        </div>
+        
 
         <div>
             <a href="/">Home</a>

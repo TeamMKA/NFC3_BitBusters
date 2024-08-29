@@ -3,7 +3,7 @@ import Parliament_2 from './Parliament_2.jpg'
 import Parliament_3 from './Parliament_3.jpg'
 
 
-
+import logo from './logo.png'
 import facebook_icon from './facebook_icon.png'
 import twitter_icon from './twitter_icon.png'
 import linkedin_icon from './linkedin_icon.png'
@@ -12,13 +12,13 @@ export const assets = {
   Parliament_2,
   Parliament_3,
 
+  logo,
   facebook_icon,
   twitter_icon,
   linkedin_icon,
   
 }
 export const minister_list =[
-  
   {
     "sno": "1",
     "candidate": "Adv. Dean Kuriakose",
