@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -21,8 +22,8 @@ const Test = () => {
     <div>
       {news.map((item, index) => (
         <div key={index}>
-          <h1>{item.title}</h1>
-          <p key={index}>{item.news}</p>
+          <h1>{item.name}</h1>
+          <p key={index}>{item.name}</p>
         </div>
       ))}
     </div>
