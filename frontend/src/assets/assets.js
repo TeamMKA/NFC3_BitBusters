@@ -18,7 +18,6 @@ export const assets = {
   
 }
 export const minister_list =[
-  
   {
     "sno": "1",
     "candidate": "Adv. Dean Kuriakose",
