@@ -19,10 +19,10 @@ const Home = () => {
     }, [images.length]);
   return (
     <div className="home">
-<<<<<<< HEAD
+
       <div className="container">
             
-=======
+
       <div className="container" style={{
         backgroundImage: `url(${images[currentImageIndex]})`,
       }}>
@@ -33,8 +33,9 @@ const Home = () => {
         <p>
           The Parliament is a place where you can learn about the history of the UK Parliament, how it works, and the people who work there.
         </p>
->>>>>>> kishan
+
       </div>
+    </div>
     </div>
   )
 }
