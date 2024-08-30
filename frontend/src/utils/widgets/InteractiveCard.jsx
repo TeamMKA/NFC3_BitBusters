@@ -5,9 +5,9 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import PropTypes from 'prop-types';
 
-export default function InteractiveCard({ image, title, description, criminalCase, constituency, education, totalAssets, selfProfession }) {
+export default function InteractiveCard({ image, title, description, criminalCase, constituency, education, totalAssets, selfProfession, onClick }) {
   return (
-    <Card sx={{ width: '100%', height: '100%', borderRadius: 2, boxShadow: 3, paddingTop :"1rem" }}>
+    <Card sx={{ width: '100%', height: '100%', borderRadius: 2, boxShadow: 3, paddingTop :"1rem" }} onClick = {onClick}>
       <CardActionArea>
         <CardMedia
           component="img"

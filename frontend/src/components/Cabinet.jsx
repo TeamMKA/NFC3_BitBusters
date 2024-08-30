@@ -2,6 +2,11 @@ import InteractiveCard from "../utils/widgets/InteractiveCard";
 import { news_list } from '../assets/assets';
 
 const Cabinet = () => {
+  const handleCardClick = (link) => {
+    window.location.href = link;
+    console.log("Navigating to:", link);
+  };
+
   return (
     <>
       <div
@@ -25,6 +30,7 @@ const Cabinet = () => {
             selfProfession={newsItem.Profession}
             education={newsItem.education}
             totalAssets={newsItem.totalAssets}
+            onClick={() => handleCardClick(newsItem.news[0].link)}
           />
         ))}
       </div>
