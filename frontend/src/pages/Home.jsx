@@ -5,6 +5,8 @@ import DrawerTemp from "../utils/widgets/DrawerTemp";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import WorkflowTimeline from "../components/WorkflowTimeline";
+import About from "./About";
+import Contact from "./Contact";
 
 const Home = () => {
   const images = [
@@ -37,27 +39,38 @@ const Home = () => {
       <div className="home">
         <div
           className="container"
-          style={{
+          style={{ position: "absolute",
+            top: 0,
+            left: "22vh",
+            width:" 400vh",
+            height: "100%",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            filter: "blur(1px) brightness(35%)", 
+            zIndex: -1, padding : "0 -10rem",
+
             backgroundImage: `url(${images[currentImageIndex]})`,
           }}
         ></div>
 
         <div className="content">
-          <h1>Welcome to the Parliament</h1>
+          <h1>Welcome to MyNeta</h1>
           <p>
-            The Parliament is a place where you can learn about the history of
-            the Inida Parliament, how it works, and the people who work there.
+            MyNeta is a place where you can learn about the history of
+            the Indian Politicians, how they work, and the people who support them.
           </p>
         </div>
-      </div>
-
-      <div className="home2">
         <DrawerTemp
           items={primaryItems}
           secondaryItems={secondaryItems}
           drawerWidth={300}
         />
       </div>
+
+  
+
+      <About />
+      <Contact />
     </>
   );
 };

@@ -26,7 +26,7 @@ const NavBar = () => {
     <nav>
       <div className="logo">
         <img src={assets.logo} alt="Logo" />
-        <h1>Navbar</h1>
+        <h1>MyNeta</h1>
       </div>
 
       <div>
@@ -43,7 +43,7 @@ const NavBar = () => {
             <button onClick={handleLogout}>Logout</button>
           </div>
         ) : (
-          <button onClick={handleGoogleLogin}>Sign in with Google 🚀</button>
+          <button onClick={handleGoogleLogin}>Sign in </button>
         )}
       </div>
     </nav>

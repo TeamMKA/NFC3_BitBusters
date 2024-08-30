@@ -1,3 +1,10 @@
+$background-color: #112e42; /* Contact background color */
+$text-color: #ffffff; /* Contact text color */
+$button-background-color: #00abf0; /* Contact highlight color */
+$button-border-color: rgba(123, 123, 123, 0.6); /* Contact input border color */
+$button-hover-background-color: darken(#00abf0, 10%); /* Darken contact highlight color on hover */
+$text-font: "Roboto"; /* Contact text font */
+
 nav {
     width: 100%;
     min-height: 4rem;
@@ -5,8 +12,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    background-color: #ab65de; /* Directly use the background color code */
+    background-color: $background-color; /* Use the contact background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
 
     > .logo {
         height: 3rem;
@@ -18,8 +26,8 @@ nav {
         }
 
         > h1 {
-            font: 500 1.5rem 'Roboto', sans-serif;
-            color: white; /* White text color for logo */
+            font: 500 1.5rem $text-font;
+            color: $text-color; /* Use the contact text color */
         }
     }
 
@@ -28,18 +36,18 @@ nav {
         gap: 2rem;
 
         > button {
-            font: 500 1rem 'Roboto', sans-serif;
+            font: 500 1rem $text-font;
             padding: 0.5rem 1rem;
-            border: 2px solid #44337A; /* Directly use the button border color code */
+            border: 2px solid $button-border-color; /* Use the contact input border color */
             border-radius: 5px;
-            background-color: #805AD5; /* Directly use the button color code */
-            color: white; /* White text color for buttons */
+            background-color: $button-background-color; /* Use the contact highlight color */
+            color: $text-color; /* Use the contact text color */
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
             animation: fadeIn 0.5s;
 
             &:hover {
-                background-color: darken(#805AD5, 10%); /* Darken button color on hover */
+                background-color: $button-hover-background-color; /* Use the darkened contact highlight color on hover */
                 transform: scale(1.05); /* Slightly enlarge on hover */
             }
         }

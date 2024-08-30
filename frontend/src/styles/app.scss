@@ -1,14 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import 'navbar.scss';
-@import 'footer.scss';
-@import 'home.scss';
-@import 'profileCard.scss';
-@import 'test.scss';
-@import 'about.scss';
-@import 'contact.scss';
-// @import 'workflowTimeline.scss';
-
 $text: #060c1c;
 $background: #f3f7fc;
 $primary: #3d66d5;
@@ -21,6 +11,17 @@ $button:#805AD5;
 $button-border:#44337A;
 
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import 'home.scss';
+@import 'navbar.scss';
+@import 'footer.scss';
+@import 'profileCard.scss';
+@import 'test.scss';
+@import 'about.scss';
+@import 'contact.scss';
+// @import 'workflowTimeline.scss';
+
+
 *{
     padding: 0;
     margin: 0;
@@ -29,6 +30,7 @@ $button-border:#44337A;
 }
 body{
   font-family: 'Poppins', sans-serif;
+  background-color: #112e4298;;
 }
 
 a{

@@ -1,25 +1,26 @@
-
-$first: white;
-$second: #090c31;
-$third: #5853ff;
-$dark: rgb(44, 44, 44);
-$text1: "Roboto";
-$text2: "Ubuntu";
+$background-color: #112e42;
+$content-background-color: #1a3a53;
+$text-color: #ffffff;
+$highlight-color: #00abf0;
+$input-border-color: rgba(123, 123, 123, 0.6);
+$button-hover-color: #00abf0;
+$text-font: "Roboto";
 
 .contact {
   width: 100%;
   height: 100vh;
-  background-color: $second;
+  background-color: $background-color;
   display: flex;
   justify-content: center;
   align-items: center;
 
   > main {
-    background-color: $first;
+    background-color: $content-background-color;
     height: 30rem;
     width: 70%;
     padding: 3rem;
     border-radius: 0 200px 200px 0;
+    color: $text-color;
 
     > form {
       margin: 5rem;
@@ -37,19 +38,21 @@ $text2: "Ubuntu";
         margin: 0.5rem;
 
         > label {
-          font: 400 1.2rem $text1;
+          font: 400 1.2rem $text-font;
           width: 20%;
           margin: 0 1rem;
+          color: $text-color;
         }
 
-        
         > input {
           align-self: stretch;
           width: 80%;
           padding: 1rem;
           border-radius: 5px;
-          border: 1px solid rgba(123,123,123,0.6);
+          border: 1px solid $input-border-color;
           outline: auto;
+          background-color: $content-background-color;
+          color: $text-color;
         }
       }
 
@@ -58,14 +61,14 @@ $text2: "Ubuntu";
         padding: 0.7rem;
         border: none;
         border-radius: 5px;
-        background-color: $second;
-        color: $first;
+        background-color: $highlight-color;
+        color: $background-color;
         width: 200px;
-        font: 500 1rem $text1;
-        
+        font: 500 1rem $text-font;
+
         &:hover {
-            background-color: $third;
-           filter: opacity(0.8)
+          background-color: $button-hover-color;
+          filter: opacity(0.8);
         }
       }
     }
