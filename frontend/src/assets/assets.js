@@ -99,7 +99,7 @@ export const news_list =
               "link": "https://www.indiatodayne.in/national/story/heavy-rains-claim-28-lives-in-gujarat-thousands-evacuated-1081442-2024-08-29",
               "sentiment": {
                   "label": "negative",
-                  "score": 0.8768562078475952
+                  "score": 0.2222
               },
               "image": "https://cf-img-a-in.tosshub.com/lingo/itne/images/story/202408/66cfeee3b0047-heavy-rains-claim-28-lives-in-gujarat--thousands-evacuated-294538712-16x9.jpg",
               "summary": "Torrential rains pounding Gujarat for the past three days have resulted in at least 28 deaths, forcing authorities to evacuate nearly 18,000 people from flood-affected areas.\nThe India Meteorological Department (IMD) has issued a red alert for 11 districts, warning of extremely heavy rainfall.\nRed alerts have been issued for the Kachchh and Saurashtra regions, while 22 districts are under a yellow alert.\nPrime Minister Narendra Modi has reached out to Gujarat Chief Minister Bhupendra Patel, pledging central government support for relief efforts.\nFurther, 14 National Disaster Response Force (NDRF) platoons and 22 State Disaster Response Force (SDRF) platoons are supporting disaster management efforts."
@@ -324,7 +324,7 @@ export const news_list =
               "link": "https://www.thehansindia.com/karnataka/gadag-congress-mla-says-modi-will-face-bangladesh-like-situation-soon-903041",
               "sentiment": {
                   "label": "negative",
-                  "score": 0.6473682522773743
+                  "score": 0.444
               },
               "image": "https://assets.thehansindia.com/h-upload/2024/08/29/1475430-mla-g-s-patil.jpg",
               "summary": "Gadag: Congress MLA G S Patil has sparked a major controversy with his provocative comments during a protest organised by the Ahinda Union in Gajendragad.\nPatil\u2019s statement was made during a speech in which he criticised the BJP and its leaders, Prime Minister Modi and Home Minister Amit Shah.\nJigajinagi criticised the intelligence and understanding of Congress leaders, accusing them of failing to contribute to the state\u2019s development and misleading the public with false promises.\nThis incident is the latest in a series of similar controversial statements from Congress leaders in Karnataka.\nThere are at least three occasions when the Congress leaders have reference to the Bangladesh situation including that of Ivan D\u2019Souza MLC from Congress party in Mangaluru"
@@ -387,7 +387,7 @@ export const news_list =
               "link": "https://timesofindia.indiatimes.com/india/need-to-name-shame-guardians-mantri-on-brats-behind-wheels/articleshow/112877881.cms",
               "sentiment": {
                   "label": "negative",
-                  "score": 0.6188008785247803
+                  "score": 0.44
               },
               "image": "https://static.toiimg.com/thumb/msid-112877924,width-1070,height-580,imgsize-2274201,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
               "summary": "8 morning habits that can help sharpen memory Lifestyle The New Seven Wonders of the World travel 10 easy dishes made with Murmura (Puffed Rice) Food 8 lesser-known parks in India to spot tigers travel Samantha to Malavika Mohanan: South actresses make a striking impression in black Entertainment Janmashtami 2024: How to make Instant Makhan without using malai in just 2 minutes Food 10 longest living pet dog breeds in the world Lifestyle \u200b10 animals that will disappear by 2030\u200b Lifestyle 8 golden rules for a happy and fulfilling life Lifestyle"
