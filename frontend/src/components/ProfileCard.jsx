@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react"; // Import the useState hook from the react package
 import axios from "axios";
-import { minister_list } from "../assets/assets";
+
 import InteractiveCard from "../utils/widgets/InteractiveCard";
 import AutoComplete from "../utils/widgets/AutoComplete";
 

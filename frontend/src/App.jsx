@@ -10,15 +10,13 @@ import Test from "./components/Test";
 const App = () => {
   return (
     <Router>
-    
-        <NavBar />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cards" element={<ProfileCard />} />
-        <Route path="/test" element= {<Test/> } />
+        <Route path="/test" element={<Test />} />
       </Routes>
       <Footer />
-     
     </Router>
   );
 };

@@ -1,0 +1,117 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  
+    .details {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+      h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        .news-section {
+          margin-bottom: 20px;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          background-color: #fff;
+  
+          .news-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+  
+            h2 {
+              font-size: 1.5em;
+              margin-right: 20px;
+              color: #555;
+            }
+  
+            img {
+              max-width: 100px;
+              border-radius: 50%;
+              margin-right: 20px;
+            }
+  
+            .details-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 10px;
+  
+              .one {
+                grid-column: span 2;
+  
+                p {
+                  margin: 5px 0;
+                  font-size: 0.9em;
+                  color: #666;
+  
+                  strong {
+                    color: #333;
+                  }
+                }
+              }
+            }
+          }
+  
+          .news-articles {
+            ul {
+              list-style: none;
+              padding: 0;
+              
+              li {
+                margin-bottom: 10px;
+                padding: 10px;
+                border: 1px solid #eee;
+                border-radius: 4px;
+                background-color: #fafafa;
+  
+                p {
+                  margin: 5px 0;
+                  font-size: 0.9em;
+                  color: #666;
+                  line-height: 150%;
+                  padding: 1rem;
+                  letter-spacing: 1px;
+  
+                  strong {
+                    color: #333;
+                  }
+  
+                  a {
+                    color: #007bff;
+                    text-decoration: none;
+  
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+  
+                img {
+                    display: flex;
+                    justify-content: center;
+                  max-width: 100%;
+                  border-radius: 4px;
+                  margin-top: 10px;
+                  border-radius: 10px;
+                  object-fit: contain;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

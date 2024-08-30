@@ -13,14 +13,14 @@ const Home = () => {
     assets.Parliament_3,
   ];
   const primaryItems = [
-    { text: 'Politicians', url: '/cards'},
-    { text: 'State', url: '/' },
-    { text: 'Party', url: '/' }
+    { text: "Politicians", url: "/cards" },
+    { text: "State", url: "/" },
+    { text: "Party", url: "/" },
   ];
   const secondaryItems = [
-    { text: 'Predictive Analysis', url: '/' },
-    { text: 'News Tracking', url: '/' },
-    { text: 'Recommendation System', url: '/' }
+    { text: "Predictive Analysis", url: "/" },
+    { text: "News Tracking", url: "/" },
+    { text: "Recommendation System", url: "/" },
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -48,12 +48,15 @@ const Home = () => {
             The Parliament is a place where you can learn about the history of
             the Inida Parliament, how it works, and the people who work there.
           </p>
-         
         </div>
       </div>
 
-      <div className="home2" >
-      <DrawerTemp items={primaryItems} secondaryItems={secondaryItems} drawerWidth={300} />
+      <div className="home2">
+        <DrawerTemp
+          items={primaryItems}
+          secondaryItems={secondaryItems}
+          drawerWidth={300}
+        />
       </div>
     </>
   );
