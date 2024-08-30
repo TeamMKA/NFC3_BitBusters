@@ -17,25 +17,25 @@ export default function InteractiveCard({ image, title, description, criminalCas
         />
         <CardContent sx={{ padding: 2 }}>
           <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
-            {title}
+            Name: {title}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
-            {description}
+            Party: {description}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
-            {criminalCase}
+            Criminal Case:  {criminalCase}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
-            {constituency}
+            Constituency: {constituency}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
-            {education}
+            Education: {education}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
-            {totalAssets}
+           TotalAssets: {totalAssets}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
-            {selfProfession}
+            Profession: {selfProfession}
           </Typography>
         </CardContent>
       </CardActionArea>
