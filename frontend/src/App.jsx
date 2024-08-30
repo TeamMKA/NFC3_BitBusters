@@ -8,7 +8,8 @@ import ProfileCard from "./components/ProfileCard";
 import Test from "./components/Test";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Services from "./pages/Services";
+import Cabinet from "./components/Cabinet";
+
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Route path="/test" element={<Test />} />
         <Route path="/about" element= {<About/> } />
         <Route path="/contact" element= {<Contact/> } />
-        <Route path="/services" element= {<Services/> } />
+        <Route path="/cab" element= {<Cabinet/> } />
       </Routes>
       <Footer />
     </Router>

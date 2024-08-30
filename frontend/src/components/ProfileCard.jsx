@@ -79,7 +79,7 @@ const ProfileCard = () => {
 
       <div className="profile">
         {filteredCandidates.map((candidate, index) => (
-          <InteractiveCard
+          <InteractiveCard onclick={() => {}}
             key={index}
             image={candidate.details.additionalDetails.photo}
             title={candidate.name}
@@ -89,6 +89,7 @@ const ProfileCard = () => {
             selfProfession={candidate.details.additionalDetails.selfProfession}
             education={candidate.details.education}
             totalAssets={candidate.details.totalAssets}
+            
           />
         ))}
       </div>

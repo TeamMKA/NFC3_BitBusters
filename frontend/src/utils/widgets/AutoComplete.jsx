@@ -8,7 +8,7 @@ export default function AutoComplete({ options, label, width = 300, ...props }) 
     <Autocomplete
       disablePortal
       options={options}
-      sx={{ width }}
+      sx={{ width, margin: '0.5rem 0',backgroundColor: "white" }} 
       renderInput={(params) => <TextField {...params} label={label} />}
       {...props}
     />

@@ -17,7 +17,7 @@ const Home = () => {
   const primaryItems = [
     { text: "Politicians", url: "/cards" },
     { text: "News", url: "/test" },
-    { text: "Party", url: "/" },
+    { text: "Cabinet", url: "/cab" },
   ];
   const secondaryItems = [
     { text: "Predictive Analysis", url: "/" },
