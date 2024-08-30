@@ -57,12 +57,12 @@ export default function DrawerTemp({ items, secondaryItems, drawerWidth = 250 })
       <Button
         onClick={toggleDrawer}
         sx={{
-          /* position: 'static', */
+          position : 'fixed',
           top: '50%',
           left: 0,
           transform: 'translateY(-50%)',
           zIndex: 11,
-          backgroundColor: 'black',
+          
         }}
       >
         {open ? <MdOutlineKeyboardArrowLeft size={24}  /> : <MdOutlineKeyboardArrowRight size={24} />}

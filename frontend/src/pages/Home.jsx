@@ -14,13 +14,13 @@ const Home = () => {
   ];
   const primaryItems = [
     { text: "Politicians", url: "/cards" },
-    { text: "State", url: "/" },
+    { text: "News", url: "/test" },
     { text: "Party", url: "/" },
   ];
   const secondaryItems = [
     { text: "Predictive Analysis", url: "/" },
-    { text: "News Tracking", url: "/" },
-    { text: "Recommendation System", url: "/" },
+    { text: "News Tracking", url: "/test" },
+    { text: "Recommendation System", url: "/test" },
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
